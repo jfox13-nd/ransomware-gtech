@@ -3,23 +3,36 @@
 flowchart TD
     
     GOAL_FINAL[Successful Ransomware Attack]
-    GOAL[Attacker executes Encryption Software on Compromised Devices]
+    GOAL[Attacker executes encryption
+     software on compromised devices]
 
-    EXPLOIT_REMOTE_SERVICES[Attacker exploits vulnerability in Remote Access Software used at GTech]
-    PERMISSIONS_LATERAL_MOVEMENT[Compromised endpoint is trusted by other networked devices]
-    INTERNAL_PHISHING[Spear phishing malware campaign from internal email addresses]
-    TAINT_SHARED_CONTENT[Malware payloads distributed to trusted shared locations]
-    BRUTE_FORCE_CREDENTIALS_OF_OTHER_NETWORKED_DEVICES[Attacker brute forces weak credentials of other networked devices]
-    ACCESS_ENDPOINT[Attacker gains accesss to a networked GTech device]
+    EXPLOIT_REMOTE_SERVICES[Attacker exploits vulnerability
+     in Remote Access Software used at GTech]
+    PERMISSIONS_LATERAL_MOVEMENT[Compromised endpoint is trusted
+     by other networked devices]
+    INTERNAL_PHISHING[Spear phishing malware campaign
+     from internal email addresses]
+    TAINT_SHARED_CONTENT[Malware payloads distributed
+     to trusted shared locations]
+    BRUTE_FORCE_CREDENTIALS_OF_OTHER_NETWORKED_DEVICES[Attacker brute forces
+     weak credentials of other networked devices]
+    ACCESS_ENDPOINT[Attacker gains accesss
+     to a networked GTech device]
 
-    SPEAR_FISHING[Attacker performs spear phishing of Gtech students or staff]
-    INSIDER_THREAT[An insider threat downloads a malicious payload]
-    REMOVABLE_MEDIA[An attacker distributes removable media across campus with malicious payload]
+    SPEAR_FISHING[Attacker performs spear
+     phishing of Gtech students or staff]
+    INSIDER_THREAT[An insider threat
+     downloads a malicious payload]
+    REMOVABLE_MEDIA[An attacker distributes removable
+     media across campus with malicious payload]
 
-    RUNS_MALICIOUS_EXECUTABLE[A GTech student or employee executes a malicious payload on a GTech owned endpoint]
+    RUNS_MALICIOUS_EXECUTABLE[A GTech student or employee executes
+     a malicious payload on a GTech owned endpoint]
 
-    PUBLIC_SERVER_EXPLOIT[Attacker exploits vulnerability on publically accessible GTech server]
-    VULNERABILITY_SCAN[Attacker discovers vulnerability on publically accessible GTech server]
+    PUBLIC_SERVER_EXPLOIT[Attacker exploits vulnerability
+     on publically accessible GTech server]
+    VULNERABILITY_SCAN[Attacker discovers vulnerability
+     on publically accessible GTech server]
 
     GOAL_FINAL --> GOAL
     GOAL --> EXPLOIT_REMOTE_SERVICES
