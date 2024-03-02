@@ -7,7 +7,7 @@ flowchart TD
      software on compromised devices]
 
     EXPLOIT_REMOTE_SERVICES[Attacker exploits vulnerability
-     in Remote Access Software used at GTech]
+     in remote access software used at GTech]
     PERMISSIONS_LATERAL_MOVEMENT[Compromised endpoint is trusted
      by other networked devices]
     INTERNAL_PHISHING[Spear phishing malware campaign
@@ -25,6 +25,11 @@ flowchart TD
      downloads a malicious payload]
     REMOVABLE_MEDIA[An attacker distributes removable
      media across campus with malicious payload]
+    DRIVE_BY[An attacker uses malvertising
+    or infected websites to distribute malware]
+
+    CREDENTIAL_PURCHASE[An attacker purchases stolen
+    credentials from an online forum]
 
     RUNS_MALICIOUS_EXECUTABLE[A GTech student or employee executes
      a malicious payload on a GTech owned endpoint]
@@ -33,6 +38,9 @@ flowchart TD
      on publically accessible GTech server]
     VULNERABILITY_SCAN[Attacker discovers vulnerability
      on publically accessible GTech server]
+
+    THIRD_PARTY[Attacker compromises
+    a priviledged 3rd party]
 
     GOAL_FINAL --> GOAL
     GOAL --> EXPLOIT_REMOTE_SERVICES
@@ -52,6 +60,10 @@ flowchart TD
     RUNS_MALICIOUS_EXECUTABLE --> SPEAR_FISHING
     RUNS_MALICIOUS_EXECUTABLE --> INSIDER_THREAT
     RUNS_MALICIOUS_EXECUTABLE --> REMOVABLE_MEDIA
+    RUNS_MALICIOUS_EXECUTABLE --> DRIVE_BY
+
+    ACCESS_ENDPOINT --> THIRD_PARTY
+    ACCESS_ENDPOINT --> CREDENTIAL_PURCHASE
 
     ACCESS_ENDPOINT --> PUBLIC_SERVER_EXPLOIT
     PUBLIC_SERVER_EXPLOIT --> VULNERABILITY_SCAN
